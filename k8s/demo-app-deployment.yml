@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: demo-app
-          image: nijanthan97/demo-app:latest
+          image: nijanthan97/nijanthan1997:latest
           ports:
             - containerPort: 7000

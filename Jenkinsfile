@@ -65,7 +65,7 @@ pipeline {
           keyFileVariable: 'SSH_KEY'
         )]) {
           sh '''
-            ssh -o StrictHostKeyChecking=no -i $SSH_KEY ubuntu@13.51.193.165 '
+            ssh -o StrictHostKeyChecking=no -i $SSH_KEY ec2-user@13.51.193.165 '
               docker pull nijanthan97/demo-app:latest &&
               docker stop demo-app || true &&
               docker rm demo-app || true &&

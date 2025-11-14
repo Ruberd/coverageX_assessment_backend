@@ -9,6 +9,8 @@ spec:
     app: demo-app
   ports:
     - protocol: TCP
-      port: 7000
-      targetPort: 7000
-      nodePort: 30000  # Access via EC2_IP:30000
+      port: 9008        # Service port
+      targetPort: 9008  # Container port your app listens on
+      nodePort: 30000   # External port on EC2
+
+

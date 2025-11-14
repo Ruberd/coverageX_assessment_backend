@@ -30,4 +30,5 @@ public class TaskController {
     public ResponseDto updateTaskStatus(@PathVariable(value = "id") Long id) {
         return taskService.updateTaskStatus(id);
     }
+
 }

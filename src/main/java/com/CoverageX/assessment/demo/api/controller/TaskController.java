@@ -31,4 +31,9 @@ public class TaskController {
         return taskService.updateTaskStatus(id);
     }
 
+    @GetMapping("/hello")
+    public String printHelloWorld(){
+        return "Hello World!!!";
+    }
+
 }

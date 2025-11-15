@@ -10,7 +10,7 @@ spec:
   ports:
     - protocol: TCP
       port: 9008        # Service port
-      targetPort: 7000  # Container port your app listens on
+      targetPort: 9008  # Container port your app listens on
       nodePort: 30000   # External port on EC2
 
 
